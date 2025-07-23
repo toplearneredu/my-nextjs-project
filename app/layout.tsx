@@ -5,7 +5,7 @@ import "./globals.css"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import WhatsAppButton from "@/components/WhatsAppButton"
-import Script from "next/script" // ✅ Add this
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -25,6 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* ✅ Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+
         {/* ✅ Google Analytics Script */}
         <Script
           async
